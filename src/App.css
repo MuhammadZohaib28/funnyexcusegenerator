@@ -98,13 +98,14 @@ button:after{
 
 @media (max-width: 768px) {
   .app {
-    margin: 10rem auto;
+    margin: 3rem auto;
     width: 90vw;
   }
 
   #heading {
     font-size: 4rem;
     text-align: center;
+    line-height: 3.5rem;
   }
 
   #excuse {
@@ -114,10 +115,13 @@ button:after{
 
   .buttons {
     margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
   }
 
   button {
+    margin: 0.51rem auto;
     font-size: 24px;
-    padding: 15px 30px;
+    padding: 10px 10px;
   }
 }
