@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 7rem auto;
+  width: 80vw;
+  background-color: #e6e0c0;
+  border-radius: 0.4rem;
+}
+
+#heading {
+  font-size: 6rem;
+  font-weight: 800;
+
+  color: #000000;
+  font-family: 'Roboto', 'sans-serif';
+  
+
+}
+
+#excuse {
+  font-weight: 450;
+  text-align: center;
+  margin-bottom: 3rem;
+  /* border: 1px solid red; */
+  padding: 1rem 1.5rem;
+}
+
+.buttons {
+  /* border: 1px solid red; */
+  margin: 4rem auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button{
+  color:white;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#FFA12B;
+  display:block;
+  position:relative;
+  padding:20px 40px;
+  cursor: pointer;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+button:active{
+  top:10px;
+  background-color:#F78900;
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+button:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .app {
+    margin: 10rem auto;
+    width: 90vw;
+  }
+
+  #heading {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  #excuse {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .buttons {
+    margin: 2rem auto;
+  }
+
+  button {
+    font-size: 24px;
+    padding: 15px 30px;
+  }
+}
