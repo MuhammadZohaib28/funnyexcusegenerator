@@ -41,10 +41,12 @@ span {
     gap: 4rem; 
     margin: 9rem auto; 
     width: 95vw; 
+    height: 8vh;
   }
 
   .footerLogo {
     height: 3rem; /* Adjust the logo size for smaller screens */
+    
   }
 
   span{
@@ -52,6 +54,9 @@ span {
   }
 
   .link {
-    font-size: 0.9rem; /* Adjust the font size for links on smaller screens */
+    font-size: 0.8rem; /* Adjust the font size for links on smaller screens */
+    text-align: center;
+    /* border: 1px solid red; */
+    /* width: 1rem; */
   }
 }
