@@ -8,6 +8,6 @@
 
 @media (max-width: 768px) {
   #root{
-    height: 115vh;
+    height: 100vh;
   }
 }
