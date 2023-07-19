@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import "./App.css";
 
+
 const App = () => {
   const [generatedExcuses, setGeneratedExcuses] = useState("");
   const [excuseType, setExcuseType] = useState("");
@@ -16,17 +17,23 @@ const App = () => {
       });
   };
   return (
-    <div className="app">
-      <h1 id="heading">Funny Excuse Generator</h1>
-      <div className="buttons">
-        <button onClick={() => fetchedAPI("family")}>Family</button>
-        <button onClick={() => fetchedAPI("office")}>Office</button>
-        <button onClick={() => fetchedAPI("developers")}>Developers</button>
-      </div>
+    <>
+      <div className="app">
+        <h1 id="heading">Excuse Generator</h1>
+        <div className="buttons">
+          <button onClick={() => fetchedAPI("family")}>Family</button>
+          <button onClick={() => fetchedAPI("office")}>Office</button>
+          <button onClick={() => fetchedAPI("developers")}>Developers</button>
+        </div>
 
-      <h1 id="excuse">{generatedExcuses}</h1>
-      <h3>Excuse Type: {excuseType}</h3>
-    </div>
+        <h1 id="excuse">
+          {generatedExcuses}
+          {generatedExcuses.length > 20 ? "😂" : "lol."}
+        </h1>
+        <h3>Excuse Type: {excuseType}</h3>
+      </div>
+      
+    </>
   );
 };
 

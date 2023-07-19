@@ -1,0 +1,57 @@
+.footer {
+  /* border: 1px solid red; */
+  background-color: #3c3c3c;
+  height: 5vh;
+  width: 80vw;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30rem; /* This value seems excessively large; consider adjusting it */
+  margin: 8rem auto;
+  border-radius: 0.41rem;
+}
+
+.footerLogo {
+  height: 6rem;
+}
+
+span {
+  color: rgb(226, 226, 226);
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #e6e0c0;
+  font-size: 1.3rem;
+}
+
+.link:hover {
+  color: #fff3ad;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem; 
+    margin: 9rem auto; 
+    width: 95vw; 
+  }
+
+  .footerLogo {
+    height: 3rem; /* Adjust the logo size for smaller screens */
+  }
+
+  span{
+    font-size: 0.7rem;
+  }
+
+  .link {
+    font-size: 0.9rem; /* Adjust the font size for links on smaller screens */
+  }
+}
